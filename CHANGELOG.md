@@ -1,6 +1,45 @@
 # Changelog for AWS SDK for JavaScript
-<!--LATEST=2.181.0-->
+<!--LATEST=2.190.0-->
 <!--ENTRYINSERT-->
+
+## 2.190.0
+* feature: Glue: This new feature will now allow customers to add a customized json classifier. They can specify a json path to indicate the object, array or field of the json documents they'd like crawlers to inspect when they crawl json files. 
+* feature: SSM: This Patch Manager release supports configuring Linux repos as part of patch baselines, controlling updates of non-OS security packages and also creating patch baselines for SUSE12
+* feature: ServiceCatalog: This release of Service Catalog adds SearchProvisionedProducts API and ProvisionedProductPlan APIs.
+* feature: ServiceDiscovery: This release adds support for registering CNAME record types and creating Route 53 alias records that route traffic to Amazon Elastic Load Balancers using Amazon Route 53 Auto Naming APIs.
+
+## 2.189.0
+* feature: Kinesis: Using ListShards a Kinesis Data Streams customer or client can get information about shards in a data stream (including meta-data for each shard) without obtaining data stream level information.
+* feature: OpsWorks: AWS OpsWorks Stacks supports EBS encryption and HDD volume types. Also, a new DescribeOperatingSystems API is available, which lists all operating systems supported by OpsWorks Stacks.
+
+## 2.188.0
+* feature: DeviceFarm: Add InteractionMode in CreateRemoteAccessSession for DirectDeviceAccess feature.
+* feature: MediaLive: Add InputSpecification to CreateChannel (specification of input attributes is used for channel sizing and affects pricing);  add NotFoundException to DeleteInputSecurityGroups.
+
+## 2.187.0
+* feature: AlexaForBusiness: Supports new field for DeviceStatusInfo which provides details about the DeviceStatus following a DeviceSync operation.
+* feature: CodeBuild: Adding support for Shallow Clone and GitHub Enterprise in AWS CodeBuild.
+* feature: GuardDuty: Added the missing AccessKeyDetails object to the resource shape.
+* feature: Lambda: AWS Lambda now supports Revision ID on your function versions and aliases, to track and apply conditional updates when you are updating your function version or alias resources.
+* feature: MetadataService: Allow environmental disabling of the AWS.MetadataService client by setting the AWS_EC2_METADATA_DISABLED environment variable to a truthy value.
+
+## 2.186.0
+* feature: Budgets: Add additional costTypes: IncludeDiscount, UseAmortized,  to support finer control for different charges included in a cost budget.
+
+## 2.185.0
+* feature: Glue: New AWS Glue DataCatalog APIs to manage table versions and a new feature to skip archiving of the old table version when updating table.
+* feature: TranscribeService: Amazon Transcribe Public Preview Release
+
+## 2.184.0
+* feature: SageMaker: CreateTrainingJob and CreateEndpointConfig now supports KMS Key for volume encryption. 
+
+## 2.183.0
+* feature: ApplicationAutoScaling: Application Auto Scaling is adding support for Target Tracking Scaling for ECS services.
+* feature: AutoScalingPlans: AWS Auto Scaling enables you to quickly discover all of the scalable resources underlying your application and set up application scaling in minutes using built-in scaling recommendations.
+* feature: RDS: With this release you can now integrate RDS DB instances with CloudWatch Logs. We have added parameters to the operations for creating and modifying DB instances (for example CreateDBInstance) to allow you to take advantage of this capability through the CLI and API. Once you enable this feature, a stream of log events will publish to CloudWatch Logs for each log type you enable.
+
+## 2.182.0
+* feature: Lambda: Support for creating Lambda Functions using 'dotnetcore2.0' and 'go1.x'. 
 
 ## 2.181.0
 * feature: Glue: Support is added to generate ETL scripts in Scala which can now be run by  AWS Glue ETL jobs. In addition, the trigger API now supports firing when any conditions are met (in addition to all conditions). Also, jobs can be triggered based on a "failed" or "stopped" job run (in addition to a "succeeded" job run). 
